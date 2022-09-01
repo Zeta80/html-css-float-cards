@@ -10,8 +10,8 @@ html {
 }
 
 .container {
-    border: 1px solid black;
-    width: 80%;
+    /* border: 1px solid black; */
+    width: 70%;
     margin: 2em auto;
 }
 
@@ -30,7 +30,9 @@ p {
 }
 
 .row {
+    margin-top: 20px;
     text-align: left;
+    margin-bottom: 30px;
 }
 
 .card {
@@ -39,12 +41,22 @@ p {
     display: inline-block;
     margin-left: 0.5em;
     overflow: auto;
+    height: 70px;
+    box-shadow: 0 0 5px 1px grey;
 }
 
 img {
     height: 70px;
     float: left;
     border-right: 6px solid rgb(15, 14, 23);
+}
+
+ul {
+    list-style: none;
+}
+
+.user {
+    padding-top: 3px;
 }
 
 .name {
@@ -61,20 +73,13 @@ img {
     color: white;
 }
 
-.user {
-    display: inline-block;
-}
-
 a {
     font-size: 0.6rem;
+    /* margin-bottom: 2px; */
 }
 
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-}
-
-.row {
-    margin-bottom: 30px;
 }
