@@ -4,10 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Prompt', sans-serif;
+    font-size: 100%;
+}
+
 .container {
     border: 1px solid black;
     width: 80%;
     margin: 2em auto;
+}
+
+h1 {
+    color: rgb(229, 49, 112);
+}
+
+p {
+    font-size: 0.8rem;
 }
 
 h1,
@@ -16,23 +29,52 @@ p {
     margin-bottom: 1em;
 }
 
+.row {
+    text-align: left;
+}
+
 .card {
     width: calc(100% / 3 - 1em);
-    background-color: blue;
+    background-color: rgb(15, 14, 23);
     display: inline-block;
     margin-left: 0.5em;
-    padding-right: 2em;
     overflow: auto;
-
 }
 
 img {
     height: 70px;
     float: left;
+    border-right: 6px solid rgb(15, 14, 23);
+}
+
+.name {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.profession {
+    font-size: 0.6rem;
+}
+
+.name,
+.profession {
+    color: white;
+}
+
+.user {
+    display: inline-block;
+}
+
+a {
+    font-size: 0.6rem;
 }
 
 .clearfix::after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
+}
+
+.row {
+    margin-bottom: 30px;
 }
